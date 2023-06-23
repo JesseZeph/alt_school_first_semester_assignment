@@ -8,6 +8,20 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+.gradient {
+  background: linear-gradient(
+    to right,
+    red 0%,
+    red 20%,
+    yellow 50%,
+    yellow 50%
+  );
+  height: 10vh;
+  filter: blur(350px);
+
+  /* position: absolute; */
+  /* z-index: 0.56; */
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -22,11 +36,13 @@ header {
   align-items: center;
   margin: auto;
   width: 70%;
+  /* z-index: 1; */
 }
 
 .logo {
   display: flex;
   gap: 5px;
+  z-index: 1;
 }
 
 .logo img {
@@ -116,7 +132,7 @@ header {
   flex-direction: column;
   justify-content: center;
   /* height: 200px; */
-  margin-top: 30px;
+  /* margin-top: 30px; */
   text-align: center;
   /* margin-left: calc(50% - 948px / 2); */
   /* left: calc(50% - 948px / 2); */
@@ -131,6 +147,7 @@ header {
   line-height: 96px;
   color: #141414;
   margin-left: calc(50% - 948px / 2);
+  z-index: 1;
 }
 
 .header-img {
@@ -236,73 +253,66 @@ header {
 
 .blog {
   display: flex;
-  flex-direction: row;
-  margin: auto;
-  width: 70%;
-  margin-top: 70px;
-  gap: 95px;
-  /* margin-top: 20px; */
+  align-items: flex-start;
+  gap: 96px;
+  margin: 120px 240px;
 }
-.inner {
+.blog-img {
   display: flex;
-  gap: 15px;
-  margin-left: -18px;
-}
-
-.inner h1 {
+  align-items: center;
+  gap: 10px;
   color: #141414;
-  font-size: 30px;
-  font-family: Gilroy-Bold;
+  font-size: 1.3rem;
+  font-family: "Gilroy-Bold";
   line-height: 32px;
 }
 
-.first-blog p {
-  font-family: "Gilroy-Medium";
-  width: 370px;
+.main-blog p {
+  display: flex;
+  width: 407px;
   height: 192px;
+  flex-direction: column;
+  color: var(--text-color-main-text, #141414);
   font-size: 16px;
-  line-height: 30px;
-  color: #141414;
-  margin-top: 5px;
-  /* margin-bottom: -20px; */
+  font-family: Gilroy-Medium;
+  line-height: 28px;
+  padding: 19px;
 }
 
-.first-row p {
+.blog-articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  row-gap: 64px;
+}
+
+.article-icon {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  background-color: rgba(50, 132, 255, 0.13);
+  display: grid;
+  place-items: center;
+}
+
+.article-text h2 {
+  color: var(--text-color-main-text, #141414);
+  font-size: 27px;
   font-family: "Gilroy-Medium";
-  font-size: 16px;
+  line-height: 28px;
+  margin-top: 40px;
+}
+
+.article-text p {
+  display: flex;
   width: 340px;
   height: 80px;
-  margin-top: 16px;
-  line-height: 30px;
-}
-
-.first-row h1,
-.second-row h1 {
-  margin-top: 40px;
-  color: #141414;
+  flex-direction: column;
+  color: var(--text-color-main-text, #141414);
+  font-size: 16px;
   font-family: "Gilroy-Medium";
-}
-
-.second-row {
-  display: flex;
-  font-family: "Gilroy-Medium";
-  justify-content: flex-end;
-  flex-direction: row;
-  /* margin: auto; */
-  width: 83%;
-  margin-top: 50px;
-  gap: 75px;
-  margin-left: 125px;
-  /* margin-right: 128px; */
-}
-.second-row h1 .second-row img {
-  width: 360px;
-}
-
-.second-row p {
-  width: 360px;
-  margin-top: 20px;
-  line-height: 30px;
+  line-height: 24px;
+  margin-top: 15px;
 }
 
 .rates-container {
@@ -458,6 +468,7 @@ header {
   justify-content: center;
   align-items: flex-start;
   gap: 24px;
+  z-index: 1;
 }
 
 .form-input {
@@ -676,11 +687,65 @@ header {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  margin: 50px 200px 30px 100px;
+  margin: 50px 168px 30px 100px;
   color: var(--neutral-800, #112232);
   font-size: 14px;
   font-family: "Gilroy-Medium";
   line-height: 20px;
   position: absolute;
   right: 0;
+  z-index: 1;
+}
+
+.gradients {
+  position: absolute;
+  top: 5324px;
+  left: 0;
+}
+.gradients-2 {
+  position: absolute;
+  top: 5250px;
+  left: 0;
+}
+
+.gradients-3 {
+  position: absolute;
+  top: 5134px;
+  left: 0;
+  overflow: hidden;
+}
+
+.gradients-4 {
+  position: absolute;
+  top: 5382px;
+  right: 0;
+  overflow: hidden;
+}
+.gradients-5 {
+  position: absolute;
+  top: 5360px;
+  right: 0;
+  overflow: hidden;
+}
+.gradients-6 {
+  position: absolute;
+  top: 5301px;
+  right: 0;
+  overflow: hidden;
+}
+
+.gradients-7 {
+  position: absolute;
+  top: 3650px;
+  left: 0;
+}
+.gradients-8 {
+  position: absolute;
+  top: 3550px;
+  left: 0;
+}
+.gradients-9 {
+  position: absolute;
+  top: 3500px;
+  left: 0;
 }
