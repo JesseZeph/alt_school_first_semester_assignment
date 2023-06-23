@@ -141,7 +141,7 @@ header {
 
 .first-header {
   /* position: relative; */
-  width: 1000px;
+  max-width: 1000px;
   height: 200px;
   font-family: "Gilroy-Bold";
   font-size: 48px;
