@@ -131,6 +131,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   /* height: 200px; */
   /* margin-top: 30px; */
   text-align: center;
@@ -140,20 +141,20 @@ header {
 
 .first-header {
   /* position: relative; */
-  width: 948px;
+  width: 1000px;
   height: 200px;
   font-family: "Gilroy-Bold";
   font-size: 48px;
   line-height: 96px;
   color: #141414;
-  margin-left: calc(50% - 948px / 2);
   z-index: 1;
 }
 
 .header-img {
   width: 173.63px;
   height: 19.91px;
-  margin: -30px 0 30px 757px;
+  margin: -30px 0 30px 0;
+  /* margin: -30px 0 30px 757px; */
   /* margin-left: calc(50% - 948px / 2); */
 }
 
