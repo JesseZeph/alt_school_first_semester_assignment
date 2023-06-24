@@ -836,12 +836,11 @@ header {
   }
   .first-header {
     font-size: 20px;
-    line-height: 22px;
+    line-height: 24px;
     padding: 15px;
     margin-bottom: -95px;
-    text-align: left;
     max-width: 450px;
-    text-align: justify;
+    text-align: center;
     align-items: center;
     justify-items: center;
   }
