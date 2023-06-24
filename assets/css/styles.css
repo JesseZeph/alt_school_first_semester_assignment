@@ -838,12 +838,13 @@ header {
     font-size: 20px;
     line-height: 22px;
     padding: 10px;
-    margin-bottom: -90px;
+    margin-bottom: -95px;
     text-align: left;
+    max-width: 400px;
   }
   .header-img {
     width: 100px;
-    margin-left: -60px;
+    margin-left: -140px;
   }
 
   .nav-menu {
