@@ -844,9 +844,9 @@ header {
   }
   .header-img {
     width: 100px;
-    position: absolute;
-    right: 50px;
-    top: 395px;
+    position: relative;
+    left: 90px;
+    top: -14px;
   }
 
   .nav-menu {
@@ -901,5 +901,30 @@ header {
     align-items: center;
     justify-content: center;
     margin-top: 0;
+  }
+
+  .header-design {
+    align-items: center;
+    justify-content: center;
+    margin-top: 125px;
+  }
+
+  .h-image {
+    width: 120px;
+    height: 120px;
+    z-index: -1;
+    position: relative;
+    transform: translate(116px, 107px);
+  }
+  .i-image {
+    width: 350px;
+    align-self: center;
+    margin-left: 105px;
+    background: linear-gradient(to right, #e2e9f0, #fff);
+    width: 316px;
+    height: 94px;
+    z-index: 1;
+    border-radius: 24px;
+    border: 1px solid #005ae2;
   }
 }
