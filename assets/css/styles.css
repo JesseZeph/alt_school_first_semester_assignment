@@ -349,8 +349,11 @@ header {
 .rates-container {
   justify-content: center;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 120px 0 68px 0;
-  /* width: 550px; */
+
   /* margin-bottom: 50px; */
 }
 
@@ -370,12 +373,13 @@ header {
   color: #141414;
 }
 
-.rates-header p {
+.rates-container p {
   font-family: "Gilroy-Medium";
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   color: #141414;
+  max-width: 550px;
 }
 
 .rates-card {
@@ -959,6 +963,7 @@ header {
     width: auto;
     padding: 15px;
     justify-content: center;
+    margin-top: 19px;
   }
   .top {
     margin-top: 40px;
@@ -998,5 +1003,42 @@ header {
     margin-top: 30px;
     display: block;
     padding-left: 16px;
+  }
+
+  .rates-container {
+    display: block;
+    margin-top: 70px;
+  }
+  .rates-header img {
+    display: none;
+  }
+
+  .rates-container p {
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 30px;
+  }
+
+  .rates-card {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .cards {
+    height: 300px;
+  }
+
+  .cards:nth-child(1) {
+    transform: translate(0);
+    z-index: 1;
+    margin-left: 343px;
+  }
+  .cards:nth-child(3) {
+    transform: translate(0);
   }
 }
