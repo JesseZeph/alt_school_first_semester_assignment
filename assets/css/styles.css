@@ -1036,7 +1036,7 @@ header {
   .cards:nth-child(1) {
     transform: translate(0);
     z-index: 1;
-    margin-left: 343px;
+    margin-left: 333px;
   }
   .cards:nth-child(3) {
     transform: translate(0);
