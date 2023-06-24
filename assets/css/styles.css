@@ -26,15 +26,23 @@ header {
   /* z-index: 1; */
 }
 .gradient {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     red 0%,
     red 20%,
     yellow 50%,
     yellow 50%
-  );
+  ); */
   height: 10vh;
-  filter: blur(350px);
+  /* filter: blur(350px); */
+  background: -webkit-linear-gradient(
+    left,
+    red 0%,
+    red 20%,
+    yellow 50%,
+    yellow 50%
+  );
+  -webkit-filter: blur(350px);
 }
 
 .logo {
@@ -776,22 +784,3 @@ header {
   top: 3573px;
   left: 0;
 }
-
-/* @media not all and (min-resolution: 0.001dpcm) {
-  .gradients-6 {
-    position: absolute;
-    top: 5602px;
-    right: 0;
-    overflow: hidden;
-  }
-} */
-
-/* @supports (-webkit-hyphens:none){
-        @content
-} */
-
-/* @media only screen and () {
-} */
-/* @media (min-width: 481px) and (max-width: 1100px) {
-  
-} */
