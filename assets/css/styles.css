@@ -841,12 +841,12 @@ header {
     margin-bottom: -95px;
     text-align: left;
     max-width: 450px;
+    text-align: justify;
+    align-items: center;
+    justify-items: center;
   }
   .header-img {
-    width: 100px;
-    position: relative;
-    left: 90px;
-    top: -14px;
+    display: none;
   }
 
   .nav-menu {
@@ -883,7 +883,8 @@ header {
     line-height: 20px;
     margin-top: -20px;
     text-align: left;
-    max-width: 350px;
+    max-width: 450px;
+    word-spacing: 3px;
   }
   .sign-up {
     font-size: 12px;
