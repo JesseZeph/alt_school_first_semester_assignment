@@ -16,6 +16,7 @@ body {
   /* padding: 0 50px 0 50px; */
   /* margin: auto; */
   /* width: 85%; */
+  overflow-x: hidden;
 }
 header {
   display: flex;
@@ -791,9 +792,11 @@ header {
     margin: 0;
     padding: 0;
     /* border: 1px solid red; */
+    /* overflow-x: hidden; */
   }
   body {
     background: #fff;
+    overflow-x: hidden;
   }
   header {
     display: flex;
@@ -926,5 +929,48 @@ header {
     z-index: 1;
     border-radius: 24px;
     border: 1px solid #005ae2;
+    border-bottom: 0;
+  }
+
+  .trapezoid {
+    width: 390px;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom: 50px solid #f8f7f7;
+    height: 280px;
+    overflow: hidden;
+    margin-top: 0;
+  }
+  .ellipse {
+    width: 250px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: -40px;
+    padding: 5px 0;
+  }
+
+  .trapezoid-container {
+    margin-top: -250px;
+  }
+
+  .analytics-container {
+    display: block;
+    width: auto;
+    padding: 15px;
+    justify-content: center;
+  }
+  .top {
+    margin-top: 40px;
+  }
+  .analytics-container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    padding: 5px 2px;
+    row-gap: 2px;
+    gap: 10px;
+    /* margin-top: -15px; */
+    /* row-gap: 2px; */
   }
 }
