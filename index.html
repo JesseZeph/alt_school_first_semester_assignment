@@ -15,6 +15,8 @@
     <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
 
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css">
+    <link rel="stylesheet" href="./assets/css/banner.css">
   </head>
   <body>
     <header>
@@ -24,7 +26,11 @@
       </div>
       <nav>
         <ul class="nav-menu">
-          <li><a href="#" style="color: #0065fe">My URLs</a></li>
+          <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+          <div class="menu">
+            <li><a href="#" style="color: #0065fe">My URLs</a></li>
           <li class="dropdown">
             <a href="#">Features<i class="fas fa-chevron-down"></i></a>
             <ul class="dropdown-menu">
@@ -35,12 +41,14 @@
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Analytics</a></li>
           <li><a href="#">FAQs</a></li>
-        </ul>
-      </nav>
-      <div class="header-buttons">
+          <div class="header-buttons">
         <button class="login-button">Log in</button>
         <button class="try-button">Try for free</button>
       </div>
+          </div>
+        </ul>
+      </nav>
+      
     </header>
 
     <main>
@@ -196,11 +204,62 @@
           </div>
         </div>
 
-        <div class="rates-card">
-          <img class="cards" src="./assets/img/Desktop - 10.svg" alt="" />
+          <!-- <img class="cards" src="./assets/img/Desktop - 10.svg" alt="" />
           <img class="cards" src="./assets/img/Desktop - 11.svg" alt="" />
-          <img class="cards" src="./assets/img/Desktop - 12.svg" alt="" />
-        </div>
+          <img class="cards" src="./assets/img/Desktop - 12.svg" alt="" /> -->
+
+          <div class="pricing--wrapper">
+            
+                <div class="basic--container">
+                  <div class="basic">
+                    <p class="card--header">Basic</p>
+                     <h4>Free</h4>
+                     <p>Free plan for all users</p>
+                  </div>
+                  <div class="card--details">
+                        <ul class="card-list">
+                        <li><img src="/assets/img/check--circle.svg" alt="">Unlimited URL Shortening</li>
+                        <li><img src="/assets/img/check--circle.svg" alt="">Basic Link Analytics</li>
+                        <li><img src="/assets/img/check--circle.svg" alt="">Customizable Short Links</li>
+                        <li><img src="/assets/img/check--circle.svg" alt="">Standard Support</li>
+                        <li><img src="/assets/img/check--circle.svg" alt="">Ad-supported</li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="professional--container">
+                  <div class="professional">
+                    <p class="card--header--prof" >Professional</p>
+                      <h4 class="text--neutral">$15/month</h4>
+                      <p class="text--neutral">Ideal for business creators</p>  
+                  </div>
+                  <div class="card--details">
+                    <ul>
+                        <li class="text--neutral"><img src="/assets/img/check--circle--neutral.svg" alt="">Enhanced Link Analytics</li>
+                        <li class="text--neutral"><img src="/assets/img/check--circle--neutral.svg" alt="">Custom Branded Domains</li>
+                        <li class="text--neutral"><img src="/assets/img/check--circle--neutral.svg" alt="">Advanced Link Customization</li>
+                        <li class="text--neutral"><img src="/assets/img/check--circle--neutral.svg" alt="">Priority Support</li>
+                        <li class="text--neutral"><img src="/assets/img/check--circle--neutral.svg" alt="">Ad-free Experience</li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="teams--container">
+                  <div class="teams">
+                    <p class="card--header">Teams</p>
+                      <h4>$25/month</h4>
+                      <p>Share with up to 10 users</p>
+                      
+                  </div>
+                  <div class="card--details">
+                    <ul class="card-list">
+                        <li><img src="/assets/img/check--circle.svg" alt="">Team Collaboration</li>
+                        <li><img src="/assets/img/check--circle.svg" alt="">User Roles and Permissions</li>
+                        <li><img src="/assets/img/check--circle.svg" alt="">Enhanced Security</li>
+                        <li><img src="/assets/img/check--circle.svg" alt="">API Access</li>
+                        <li><img src="/assets/img/check--circle.svg" alt="">Dedicated Account Manager</li>
+                      </ul>
+                  </div>
+                </div>
+          </div>
 
         <div class="cards-buttons">
           <button class="custom">Get Custom Pricing</button>
@@ -245,8 +304,8 @@
             </form>
 
             <p class="form-paragraph">
-              By clicking TrimURL, I agree to the <b>Terms of Service.</b
-              ><br /><b>Privacy Policy</b> and Use of Cookies
+              By clicking TrimURL, I agree to the <b>Terms of Service. </b
+              ><b>Privacy Policy</b> and Use of Cookies
             </p>
           </div>
         </div>
@@ -262,8 +321,8 @@
               <li>How does URL shortening work?<span class="close">_</span></li>
               <li
                 style="
-                  line-height: 35px;
-                  margin-top: 20px;
+                  line-height: 30px;
+                  margin-top: 15px;
                   padding-bottom: 20px;
                 "
               >
@@ -301,8 +360,8 @@
               </li>
               <li
                 style="
-                  line-height: 35px;
-                  margin-top: 20px;
+                  line-height: 30px;
+                  margin-top: 15px;
                   padding-bottom: 20px;
                 "
               >
